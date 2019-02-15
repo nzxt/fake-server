@@ -1,0 +1,17 @@
+{
+  "name": "fake-server",
+  "version": "1.0.0",
+  "description": "fake-server for authorization test",
+  "main": "fake-server.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NZXTUA",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.14.2",
+    "jsonwebtoken": "^8.4.0",
+    "nodemon": "^1.18.10"
+  }
+}
