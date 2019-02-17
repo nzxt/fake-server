@@ -43,6 +43,13 @@ server.post('/login', (req, res) => {
   res.status(200).json({access_token})
 })
 
+server.post('/logout', (req, res) => {
+  const status = 200
+  const message = 'Logged out successfully...'
+  res.status(status).json({status, message})
+  return
+})
+
 server.get('/users/:id', (req, res) => {
   res.status(200).json({"user": userdb.users[0]})
 })
