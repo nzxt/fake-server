@@ -31,7 +31,7 @@ function isAuthenticated({email, password}){
 }
 
 
-server.post('/login', (req, res) => {
+server.post('/auth/login', (req, res) => {
   const {email, password} = req.body
   if (isAuthenticated({email, password}) === false) {
     const status = 401
@@ -43,14 +43,14 @@ server.post('/login', (req, res) => {
   res.status(200).json({access_token})
 })
 
-server.post('/logout', (req, res) => {
+server.post('/auth/logout', (req, res) => {
   const status = 200
   const message = 'Logged out successfully...'
   res.status(status).json({status, message})
   return
 })
 
-server.get('/users/:id', (req, res) => {
+server.get('/auth/users/:id', (req, res) => {
   res.status(200).json({"user": userdb.users[0]})
 })
 
@@ -73,6 +73,6 @@ server.use(/^(?!\/).*$/,  (req, res, next) => {
 
 // server.use(router)
 
-server.listen(3030, () => {
-  console.log('Running fake Auth API Server at http://localhost:3030')
+server.listen(5000, () => {
+  console.log('Running fake Auth API Server at http://*:5000')
 })

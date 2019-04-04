@@ -1,10 +1,9 @@
 {
 	"users": [
 		{
-			"id": 1, "first_name": "Artem", "last_name": "Kolinko", "full_name": "Artem Kolinko", "email": "admin", "password": "qwerty"
+			"id": 1, "given_name": "Main", "family_name": "Admin", "full_name": "Main Admin", "email": "admin@example.com", "password": "qwerty", "picture": "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-1/p160x160/53717309_10218677615757488_5607625085385965568_n.jpg?_nc_cat=102&_nc_ht=scontent-frx5-1.xx&oh=7007b8985cf5d30284b097c7ffa24dfd&oe=5D1C080B"
 		},
 		{
-			"id": 2, "first_name": "Tom", "last_name": "Morello", "full_name": "Tom Morello", "email": "tom@example.com", "password": "test1234"
-		}
+			"id": 2, "given_name": "Deniz", "family_name": "True", "full_name": "Deniz True", "email": "nzxtua@example.com", "password": "qwerty", "picture": "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-1/p160x160/10305065_631921736884414_3458017957958254625_n.jpg?_nc_cat=108&_nc_ht=scontent-frx5-1.xx&oh=de7f6c5f90eb1e6f4062fcd2123d1de4&oe=5D1E49D5"	}
 	]
 }
